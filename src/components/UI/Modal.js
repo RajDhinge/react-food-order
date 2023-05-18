@@ -5,7 +5,7 @@ import classes from './Modal.module.css';
 const portalElement = document.getElementById('overlays');
 const Modal = (props) => {
 	const Backdrop = () => {
-		return <div className={classes.backdrop} />
+		return <div className={classes.backdrop} onClick={props.onClose} />
 	}
 
 	const ModalOverlay = () => {
